@@ -1,6 +1,6 @@
 {
   "name": "@tom-cli-dev/log",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "exports": {
     ".": {
@@ -22,6 +22,6 @@
   },
   "packageManager": "pnpm@10.4.1",
   "dependencies": {
-    "winston": "^3.17.0"
+    "pino": "^9.6.0"
   }
 }
