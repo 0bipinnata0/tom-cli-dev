@@ -53,9 +53,6 @@ importers:
       import-local:
         specifier: ^3.2.0
         version: 3.2.0
-      minimist:
-        specifier: ^1.2.8
-        version: 1.2.8
       root-check:
         specifier: ^2.0.0
         version: 2.0.0

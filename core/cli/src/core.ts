@@ -11,7 +11,6 @@ import colors from "colors";
 import registerCommand from "./registerCommand";
 import checkGlobalUpdate from "./checkGlobalUpdate";
 
-
 function checkPkgVersion() {
   logger.info(pkg.version);
 }
@@ -55,16 +54,18 @@ function checkEnv() {
   createDefaultConfig();
 }
 
+async function prepare() {
+  checkPkgVersion();
+  checkNodeVersion();
+  checkRoot();
+  checkUserHome();
+  checkEnv();
+  await checkGlobalUpdate();
+}
 
-async function core(args: string[]) {
+async function core() {
   try {
-    checkPkgVersion();
-    checkNodeVersion();
-    checkRoot();
-    checkUserHome();
-    // checkInputArgs();
-    checkEnv();
-    await checkGlobalUpdate();
+    await prepare();
     registerCommand();
   } catch (e) {
     if (e instanceof Error) {
