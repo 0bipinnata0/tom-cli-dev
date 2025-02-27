@@ -5,7 +5,6 @@ import rootCheck from "root-check";
 import os from "os";
 import fs from "fs";
 import logger from "@tom-cli-dev/log";
-import minimist from "minimist";
 import dotenv from "dotenv";
 import path from "path";
 import colors from "colors";
@@ -35,16 +34,6 @@ function checkUserHome() {
   if (!userHome || !fs.existsSync(userHome)) {
     throw new Error(colors.red("当前用户主目录不存在！"));
   }
-}
-
-function checkInputArgs() {
-  const args = minimist(process.argv.slice(2));
-  if (args.debug) {
-    process.env.LOG_LEVEL = "debug";
-  } else {
-    process.env.LOG_LEVEL = "info";
-  }
-  logger.level = process.env.LOG_LEVEL;
 }
 
 function createDefaultConfig() {
