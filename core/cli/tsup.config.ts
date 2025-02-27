@@ -1,16 +1,17 @@
-import { defineConfig } from 'tsup'
+import { defineConfig } from "tsup";
 
 export default defineConfig({
-  entry: ['src/index.ts'],
+  entry: ["src/index.ts"],
   splitting: true,
   sourcemap: false,
   clean: true,
-  dts: true,
-  format: ['cjs'],
-  minify: true,
+  shims: true,
+  dts: false,
+  format: ["esm"],
+  minify: false,
   bundle: true,
   treeshake: true,
   skipNodeModulesBundle: true,
-  outDir: 'dist',
-  platform: 'node',
-})
+  outDir: "dist",
+  //   platform: "node",
+});
