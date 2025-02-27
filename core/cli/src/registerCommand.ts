@@ -2,6 +2,7 @@ import pkg from "../package.json";
 import { Command } from "commander";
 import logger from "@tom-cli-dev/log";
 import colors from "colors";
+import { init } from "@tom-cli-dev/init";
 
 const program = new Command();
 
@@ -10,6 +11,12 @@ function registerCommand() {
     .version(pkg.version)
     .usage("<command> [options]")
     .option("-d, --debug", "是否开启调试模式", false);
+
+  program
+    .command("init [projectName]")
+    .description("初始化项目")
+    .option("-f, --force", "是否强制初始化项目", false)
+    .action(init);
 
   program.on("option:debug", function () {
     if (program.opts().debug) {

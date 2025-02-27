@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "moduleResolution": "nodenext",
+    "resolveJsonModule": true,
+    "module": "NodeNext",
+    "rootDir": "src"
+  },
+  "exclude": ["tsup.config.ts"]
+}

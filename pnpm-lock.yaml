@@ -28,11 +28,16 @@ importers:
         specifier: ^5.7.3
         version: 5.7.3
 
+  commands/init: {}
+
   core/cli:
     dependencies:
       '@tom-cli-dev/get-npm-info':
         specifier: workspace:*
         version: link:../../utils/get-npm-info
+      '@tom-cli-dev/init':
+        specifier: workspace:*
+        version: link:../../commands/init
       '@tom-cli-dev/log':
         specifier: workspace:*
         version: link:../../utils/log
