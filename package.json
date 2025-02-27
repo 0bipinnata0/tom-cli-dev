@@ -7,7 +7,8 @@
     "build": "pnpm run -r build",
     "dev": "pnpm run -r dev",
     "p1": "changeset",
-    "p2": "changeset publish"
+    "p2": "changeset version",
+    "p3": "changeset publish"
   },
   "private": true,
   "keywords": [],

@@ -9,6 +9,7 @@ import logger from "@tom-cli-dev/log";
 import minimist from "minimist";
 import dotenv from "dotenv";
 import path from "path";
+import { getNpmSemverVersion } from "@tom-cli-dev/get-npm-info";
 
 function checkPkgVersion() {
   logger.info(pkg.version);
@@ -63,7 +64,23 @@ function checkEnv() {
   createDefaultConfig();
 }
 
-function core(args: string[]) {
+async function checkGlobalUpdate() {
+  const currentVersion = pkg.version;
+  const npmName = pkg.name;
+
+  const lastVersion = await getNpmSemverVersion(currentVersion, npmName);
+
+  if (lastVersion && semver.gt(lastVersion, currentVersion)) {
+    logger.warn(
+      colors.yellow(
+        `请手动更新 ${npmName}，当前版本：${currentVersion}，最新版本：${lastVersion}`
+      )
+    );
+    logger.warn(`更新命令: npm install -g ${npmName}`);
+  }
+}
+
+async function core(args: string[]) {
   try {
     checkPkgVersion();
     checkNodeVersion();
@@ -71,6 +88,7 @@ function core(args: string[]) {
     checkUserHome();
     checkInputArgs();
     checkEnv();
+    await checkGlobalUpdate();
   } catch (e) {
     if (e instanceof Error) {
       logger.error(e.message);

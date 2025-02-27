@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "module": "ESNext",
+    "rootDir": "src",
+    "types": ["./global.d.ts"]
+  },
+  "exclude": ["tsup.config.ts"]
+}

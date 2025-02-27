@@ -1,6 +1,6 @@
 {
   "name": "@tom-cli-dev/core",
-  "version": "0.0.7",
+  "version": "1.0.1",
   "description": "",
   "bin": {
     "tom-cli-dev": "./bin/index"
@@ -28,6 +28,7 @@
   "packageManager": "pnpm@10.4.1",
   "dependencies": {
     "@tom-cli-dev/log": "workspace:*",
+    "@tom-cli-dev/get-npm-info": "workspace:*",
     "colors": "^1.4.0",
     "dotenv": "^16.4.7",
     "import-local": "^3.2.0",

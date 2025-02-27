@@ -1,0 +1,36 @@
+# @tom-cli-dev/core
+
+## 1.0.1
+
+### Patch Changes
+
+- test
+- Updated dependencies
+  - @tom-cli-dev/get-npm-info@1.0.1
+  - @tom-cli-dev/log@1.1.1
+
+## 1.1.0
+
+### Minor Changes
+
+- 2e3599c: ttest:`
+
+### Patch Changes
+
+- 9dec1f4: test
+- 1a8693d: test 2
+- 2e3599c: ttest
+- 2e3599c: test
+- 1a8693d: test 2
+- 2e3599c: test
+- test
+- Updated dependencies [9dec1f4]
+- Updated dependencies [1a8693d]
+- Updated dependencies [2e3599c]
+- Updated dependencies [2e3599c]
+- Updated dependencies [1a8693d]
+- Updated dependencies [2e3599c]
+- Updated dependencies
+- Updated dependencies [2e3599c]
+  - @tom-cli-dev/log@1.1.0
+  - @tom-cli-dev/get-npm-info@1.0.8
