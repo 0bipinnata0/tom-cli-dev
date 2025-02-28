@@ -1,8 +1,8 @@
 import pkg from "../package.json";
 import { Command } from "commander";
-import logger from "@tom-cli-dev/log";
 import colors from "colors";
-import { init } from "@tom-cli-dev/init";
+import { exec } from "@tom-cli-dev/exec";
+import logger from "@tom-cli-dev/log";
 
 const program = new Command();
 
@@ -17,7 +17,7 @@ function registerCommand() {
     .command("init [projectName]")
     .description("初始化项目")
     .option("-f, --force", "是否强制初始化项目", false)
-    .action(init);
+    .action(exec);
 
   program.on("option:debug", function () {
     if (program.opts().debug) {

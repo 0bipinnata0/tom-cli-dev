@@ -1,8 +1,8 @@
 import pkg from "../package.json";
 import semver from "semver";
-import logger from "@tom-cli-dev/log";
 import { getNpmSemverVersion } from "@tom-cli-dev/get-npm-info";
 import colors from "colors";
+import logger from "@tom-cli-dev/log";
 
 async function checkGlobalUpdate() {
   const currentVersion = pkg.version;

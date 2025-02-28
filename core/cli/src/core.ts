@@ -4,12 +4,12 @@ import semver from "semver";
 import rootCheck from "root-check";
 import os from "os";
 import fs from "fs";
-import logger from "@tom-cli-dev/log";
 import dotenv from "dotenv";
 import path from "path";
 import colors from "colors";
 import registerCommand from "./registerCommand";
 import checkGlobalUpdate from "./checkGlobalUpdate";
+import logger from "@tom-cli-dev/log";
 
 function checkPkgVersion() {
   logger.info(pkg.version);

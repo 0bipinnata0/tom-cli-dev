@@ -1,6 +1,6 @@
 {
-  "name": "@tom-cli-dev/log",
-  "version": "1.4.0",
+  "name": "@tom-cli-dev/package",
+  "version": "1.3.0",
   "description": "",
   "type": "module",
   "exports": {
@@ -13,22 +13,21 @@
   "files": [
     "dist"
   ],
+  "dependencies": {
+    "@tom-cli-dev/tools": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5"
+  },
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "pnpm@10.4.1",
-  "dependencies": {
-    "pino": "^9.6.0",
-    "pino-pretty": "^13.0.0"
-  },
-  "devDependencies": {
-    "@types/node": "^22.13.5"
-  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.4.1"
 }

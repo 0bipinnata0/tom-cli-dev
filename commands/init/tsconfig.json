@@ -1,12 +1,9 @@
 {
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "dist",
-    "target": "ESNext",
-    "esModuleInterop": true,
-    "moduleResolution": "nodenext",
-    "resolveJsonModule": true,
-    "module": "NodeNext",
-    "rootDir": "src"
+    "rootDir": ".",
+    "types": ["node"]
   },
-  "exclude": ["tsup.config.ts"]
+  "exclude": ["tsup.config.ts","dist"]
 }

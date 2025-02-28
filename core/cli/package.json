@@ -1,6 +1,6 @@
 {
   "name": "@tom-cli-dev/core",
-  "version": "1.1.0",
+  "version": "1.3.0",
   "description": "",
   "bin": {
     "tom-cli-dev": "./bin/tom-cli-dev"
@@ -27,9 +27,10 @@
   },
   "packageManager": "pnpm@10.4.1",
   "dependencies": {
+    "@tom-cli-dev/exec": "workspace:*",
     "@tom-cli-dev/get-npm-info": "workspace:*",
-    "@tom-cli-dev/log": "workspace:*",
     "@tom-cli-dev/init": "workspace:*",
+    "@tom-cli-dev/log": "workspace:*",
     "colors": "^1.4.0",
     "commander": "^13.1.0",
     "dotenv": "^16.4.7",
@@ -38,7 +39,7 @@
     "semver": "^7.7.1"
   },
   "devDependencies": {
-    "@types/minimist": "^1.2.5",
+    "@types/node": "^22.13.5",
     "@types/root-check": "^1.0.2",
     "@types/semver": "^7.5.8"
   }

@@ -1,5 +1,33 @@
 # @tom-cli-dev/core
 
+## 1.3.0
+
+### Minor Changes
+
+- test
+
+### Patch Changes
+
+- Updated dependencies
+  - @tom-cli-dev/get-npm-info@1.3.0
+  - @tom-cli-dev/init@1.3.0
+  - @tom-cli-dev/exec@1.4.0
+  - @tom-cli-dev/log@1.4.0
+
+## 1.2.0
+
+### Minor Changes
+
+- test
+
+### Patch Changes
+
+- Updated dependencies
+  - @tom-cli-dev/get-npm-info@1.2.0
+  - @tom-cli-dev/init@1.2.0
+  - @tom-cli-dev/exec@1.3.0
+  - @tom-cli-dev/log@1.3.0
+
 ## 1.1.0
 
 ### Minor Changes

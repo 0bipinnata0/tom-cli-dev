@@ -6,7 +6,7 @@
     "resolveJsonModule": true,
     "module": "ESNext",
     "rootDir": "src",
-    "types": ["./global.d.ts"]
+    "types": ["node"]
   },
-  "exclude": ["tsup.config.ts"]
+  "exclude": ["tsup.config.ts","dist"]
 }
